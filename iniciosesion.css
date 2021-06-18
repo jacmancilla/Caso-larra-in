@@ -1,0 +1,46 @@
+.titulo{
+    padding: 300px;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+h4{
+    font-size: 50px;
+    margin:50px;
+}
+
+		
+
+.registro-session{
+    list-style: none;
+}
+
+.session li{
+    display: inline;
+
+}
+
+.registro li{
+    display: inline;
+}
+
+.session{
+    text-align: center; 
+
+}
+
+.registro ul li{
+    padding: 8px;
+}
+
+.session ul li{
+    padding: 8px;
+}
+
+
+.registro{
+    text-align:center;
+
+}
+
