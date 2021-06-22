@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Menú principal admin</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href='../navbar.style.css' rel="stylesheet">
+    <link href='./admin-principal.css' rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+    </script>
+</head>
+
+<body>
+    <!-- Barra Superior -->
+    <div class="container">
+        <div class='col-3 header-izquierda'>
+            <a href="../index.html">
+                <img class="imagen-logo" alt="imagen-logo"
+                    src="https://freepikpsd.com/media/2019/10/mundo-tecnologico-png-1.png" />
+            </a>
+            <p class="texto-logo">Importadora Larrain</p>
+        </div>
+
+        <div class="col-6 buscar ">
+            <div class="row">
+                <div class="input-group">
+                    <input class="form-control py-2 border-left-0 border" type="search" placeholder='buscar producto'
+                        id="example-search-input" />
+                    <span class="input-group-append">
+                        <button class="btn " type="button">
+                            Buscar
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2 header-derecha">
+            <a class="links orden-menu-icon" href="#">
+                <button class="item-header-derecha">
+                    <img class="imagen-header" alt="imagen-carrito"
+                        src="https://image.flaticon.com/icons/png/512/1187/1187005.png" />
+                </button>
+            </a>
+            <div class="orden-menu-icon">
+                <img class="imagen-header" alt="login" src="https://image.flaticon.com/icons/png/512/860/860733.png"
+                    style="margin: 0 10px;" />
+                <a class="links" style="font-size:smaller" href="../InicioSesion.html">
+                    Cerrar Sesión
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Administrador -->
+    <!-- Navbar -->
+    <div class='navbar-menu'>
+        <ul class="nav justify-content-center">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle links" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Productos
+                </a>
+                <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./admin-ver-producto.html">Ver Productos</a>
+                    <a class="dropdown-item" href="./admin-consultaproducto.html">Consultar Productos</a>
+                    <a class="dropdown-item" href="./admin-registroproduc.html">Registrar Productos</a>
+                    <a class="dropdown-item" href="./admin-modificaproduc.html">Modificar Productos</a>
+                    <a class="dropdown-item" href="./admin-eliminaproduc.html">Eliminar Productos</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle links" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Lista Ofertas
+                </a>
+                <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./perros.html">Mensajes Proveedores</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle links" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Despachos
+                </a>
+                <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./perros.html">Registrar Despacho</a>
+                    <a class="dropdown-item" href="./gatos.html">Consultar Despacho</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle links" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ventas
+                </a>
+                <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./perros.html">Resumenes de venta</a>
+                    <a class="dropdown-item" href="./gatos.html">Enviar email a cliente</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- contenido -->
+    <div style="margin-bottom: 1200px;">
+
+    </div>
+
+
+
+
+
+    <div class="footer">
+
+    </div>
+
+
+</body>
+
+</html>
