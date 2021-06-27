@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Registro producto-admin</title>
+    <title>Registra Despacho admin</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
     <link href='../navbar.style.css' rel="stylesheet">
     <link href='./admin-ver-produc.css' rel="stylesheet">
@@ -16,7 +16,7 @@
 </head>
 <script>
     function abrirAlerta() {
-        alert("Su producto se registró exitosamente");
+        alert("Su Despacho se registró exitosamente");
     }
 </script>
 
@@ -119,63 +119,71 @@
         </ul>
     </div>
 
-    <!--Registro producto admin-->
-    <h3 class="h3-producto">Registro de Productos</h3>
+    <!--Registro despacho admin-->
+    <h3 class="h3-producto">Regitrar despachos</h3>
+
     <div class="col-sm-12 registro-producto">
 
-        <div class="col-sm-6 columna-producto">
+        <div class="col-sm-6 columna-despacho">
 
             <div>
-                <label class="label-producto" for="nombre_producto">Nombre:</label>
-                <input type="text" class="form-control-input" name="nombre" id="nombre" value="Cámara 24.1MP" />
+                <label class="label-despacho-reg" for="nombre_despacho">Nombre Cliente:</label>
+                <input type="text" class="form-control-input input-despachoreg" name="nombre" id="nombre"
+                    value="Juana Mendoza" />
             </div>
 
             <div>
-                <label class="label-producto" for="descripcion_producto">Descripción:</label>
-                <input type="text" class="form-control-input" name="descripcion" id="descripcion"
-                    value="Sensor CMOS APS-C de 24.1 MP Procesador de imágen" />
+                <label class="label-despacho-reg" for="direccion-despacho">Dirección del Cliente:</label>
+                <input type="text" class="form-control-input input-despachoreg" name="direcciondespacho"
+                    id="direcciondespacho" value="Los Manzanos 123, Recoleta" />
             </div>
 
             <div>
-                <label class="label-producto" for="stock_producto">Stock:</label>
-                <input type="text" class="form-control-input" name="stock" id="stock" value="100" />
+                <label class="label-despacho-reg" for="rut_cliente">Rut del Cliente:</label>
+                <input type="text" class="form-control-input input-despachoreg" name="rutcliente" id="rutcliente"
+                    value="20.234.432-3" />
             </div>
 
             <div>
-                <label class="label-producto" for="stock_producto">Imagen:</label>
-                <div class="custom-file form-control-input" id="customFile" lang="es">
-
-                    <input type="file" class="custom-file-input" id="exampleInputFile" aria-describedby="fileHelp">
-
-                    <label class="custom-file-label" for="exampleInputFile">
-                        Seleccione una imagen...
-                    </label>
-                </div>
+                <label class="label-despacho-reg" for="persona_rebibe">Persona que recibe:</label>
+                <input type="text" class="form-control-input input-despachoreg" name="precibe" id="precibe"
+                    value="Juana Mendoza" />
             </div>
 
+            <div>
+                <label class="label-despacho-reg" for="nombre_pro">Nombre del Producto:</label>
+                <input type="text" class="form-control-input input-despachoreg" name="nomprepro" id="nomprepro"
+                    value="Canon - Cámara 24.1 MP Lente 1545mm" />
+            </div>
         </div>
 
-        <div class="col-sm-6 columna-producto">
+        <div class="col-sm-6 columna-despacho">
             <div>
-                <label class="label-producto" for="codigo_producto">Código:</label>
-                <input type="text" class="form-control-input" name="codigo" id="codigo" value="342334555" />
+                <label class="label-despacho-reg-derecha" for="codigo_producto">Cantidad::</label>
+                <input type="text" class="form-control-input input-despachoreg" name="cantidad" id="codigo" value="1" />
             </div>
 
             <div>
-                <label class="label-producto" for="precio_producto">Precio:</label>
-                <input type="text" class="form-control-input" name="precio" id="precio" value="$150.000" />
+                <label class="label-despacho-reg-derecha" for="precio_despacho">Precio:</label>
+                <input type="text" class="form-control-input input-despachoreg" name="precio" id="precio"
+                    value="$120.990" />
+            </div>
+            <div>
+                <label class="label-despacho-reg-derecha" for="codigo_despacho">Código::</label>
+                <input type="text" class="form-control-input input-despachoreg" name="codigo" id="codigo"
+                    value="2349823022" />
             </div>
         </div>
     </div>
 
     <!--botones-->
-    <div class="col-sm-12 contenedor-boton-doble">
+    <div class="col-sm-12 contenedor-boton-doble-des">
         <a class="link-boton boton-registro-pro" data-toggle="modal" data-target="#miModal">
             <button type="button" class="btn btn-success btn-registro">
                 Registrar
             </button>
         </a>
-        <a class="link-boton boton-registro-pro" href="./admin-principal.html">
+        <a class="link-boton boton-registro-pro" href="./admin-registra-despacho.html">
             <button type="button" class="btn btn-success btn-registro">
                 cancelar
             </button>
@@ -188,11 +196,11 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Registrar Producto</h4>
+                    <h4 class="modal-title" id="myModalLabel">Registrar despacho</h4>
                 </div>
 
                 <div class="modal-body">
-                    ¿Está seguro de registrar este producto?
+                    ¿Está seguro de registrar este despacho?
                 </div>
                 <div style="display: flex;margin: 40px 0 25px;">
                     <a href="#alerta" class="btn-registro col-sm-6" data-toggle="modal" data-target="#miModal">
@@ -211,11 +219,11 @@
         </div>
     </div>
 
-
     <!--footer-->
     <div class="footer">
 
     </div>
+
 
 </body>
 
