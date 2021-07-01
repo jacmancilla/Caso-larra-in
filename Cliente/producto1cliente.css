@@ -4,24 +4,24 @@
     position: relative;
     right: -250px;
     margin: 94px;
-  }
-  
-  .listaproducto{
+}
+
+.listaproducto{
     font-size: 1.2em;
     text-align: justify;
     text-indent: 36em;
     margin-top: -380px;
-  }
-  
-  h4{
+}
+
+h4{
     text-align: center;
-  }
-  
-  .boton-producto{
+}
+
+.boton-producto{
     text-align: center;
-  
-  }
-  
-  .radio{
+
+}
+
+.radio{
     float: left;
-  }
+}
