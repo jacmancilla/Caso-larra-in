@@ -1,0 +1,109 @@
+
+/*Ver productos*/
+
+.row-todos-productos {
+    margin-top: 80px;
+    /*modificar si footer se ve mal*/
+    padding: 0 15%;
+    margin-bottom: 165px;
+  }
+  
+  .row-productos {
+    display: flex;
+    border-style: solid;
+    margin-bottom: 10px;
+  }
+  
+  .imagen-producto {
+    width: 150px;
+    margin: 15px 80px;
+  }
+  
+  .imagen-producto2 {
+    width: 150px;
+    margin: 15px 80px;
+  }
+  
+  .boton-producto {
+    background-color: #28a745;
+    ;
+    border-color: #19221e;
+    width: 140px;
+    height: 39px;
+    margin: -16px;
+    border-width: 2px;
+  }
+  
+  .boton-producto:hover {
+    background-color: #126f91;
+    /*Color cajita botón*/
+  }
+  
+  .link-boton-producto {
+    color: rgb(252, 246, 246);
+    /*Color de letra botón*/
+  }
+  
+  .link-boton-producto:hover {
+    text-decoration: none;
+    color: rgb(252, 246, 246);
+    /*Color de letra botón al pasar el mouse*/
+  }
+  
+  .precio-producto {
+    margin: 22px 0px;
+  }
+  
+  .descripcion-producto {
+    margin: 18px 0px;
+  }
+  
+  .color-precio {
+    color: rgb(215, 194, 33);
+  }
+  
+  .color-precio-ennegro {
+    color: black;
+  }
+  
+  .boton-producto-volver {
+    position: absolute;
+    right: 0;
+    width: 100px;
+    background-color: rgb(232, 189, 81);
+    border-color: black;
+    border-width: 2px;
+    margin-top: -24px;
+  }
+  
+  .boton-producto-volver:hover {
+    background-color: #126f91;
+    border-width: 2px;
+}
+
+.row-boton-volver-producto {
+    margin-bottom: 100px;
+    margin-left: -10%;
+}
+
+.row-producto {
+    display: flex;
+margin-bottom: 10px;
+}
+
+.link-boton-producto-volver {
+    color: rgb(2, 2, 2);
+    /*Color de letra botón*/
+}
+
+.link-boton-producto-volver:hover {
+    text-decoration: none;
+    color: rgb(252, 246, 246);
+    /*Color de letra botón al pasar el mouse*/
+}
+
+.row-producto-blanco {
+    background-color: white;
+    border-style: solid;
+    display: flex
+}
