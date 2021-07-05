@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lista despacho</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href='./navbar.style.css' rel="stylesheet">
+  <link href='./despachador.css' rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+  </script>
+</head>
+
+<body>
+  <!-- Barra Superior -->
+  <div class="container">
+    <div class='col-3 header-izquierda'>
+      <a href="index.html">
+        <img class="imagen-logo" alt="imagen-logo"
+          src="https://freepikpsd.com/media/2019/10/mundo-tecnologico-png-1.png" />
+      </a>
+      <p class="texto-logo">Importadora Larrain</p>
+    </div>
+
+    <div class="col-6 buscar ">
+      <div class="row">
+        <div class="input-group">
+          <input class="form-control py-2 border-left-0 border" type="search" placeholder='buscar producto'
+            id="example-search-input" />
+          <span class="input-group-append">
+            <button class="btn " type="button">
+              Buscar
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-2 header-derecha">
+      <a class="links orden-menu-icon" href="#">
+        <button class="item-header-derecha">
+          <img class="imagen-header" alt="imagen-carrito"
+            src="https://image.flaticon.com/icons/png/512/1187/1187005.png" />
+        </button>
+      </a>
+      <div class="orden-menu-icon">
+        <img class="imagen-header" alt="login" src="https://image.flaticon.com/icons/png/512/860/860733.png"
+          style="margin: 0 10px;" />
+        <a class="links" style="font-size:smaller" href="./InicioSesion.html">
+          Despachador
+        </a>
+        <a class="links" style="font-size:smaller" href="#">
+          <input type="button" value="Cerrar sesión" style = "background-color:#23B000 ; color:white; width:100px;" onclick= "location.href='InicioSesion.html'" >
+        </a>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <div class='navbar-menu'>
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link links" href="despachador-inicio.html">Inicio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link links" href="">Lista ofertas</a>
+      </li>
+      
+    </ul>
+  </div>
+  <!-- NAVBAR CIERRE -->
+    <br></br>
+
+    <div class ="container-fluid">
+        <div class="row ">
+            <div class="col-sm ">
+                <table>
+                  <thead>
+                    <tr>
+                      <th><!--nombre cliente -->Nombre cliente</th>
+                      <th><!--Apellido -->Apellido</th>
+                      <th><!--rut -->Rut</th>
+                      <th><!--telefono-->Telefono</th>
+                      <th><!--Direccion -->Direccion</th>
+                      <th><!--Persona que recibe -->Persona que recibe</th>
+                      <th><!--Fecha despa -->Fecha despa</th>
+                      <th><!--Descargar o cancelar -->Descargar o cancelar</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><!--nombre cliente -->Olga</td>
+                      <td><!--Apellido -->Lopez gallardo</td>
+                      <td><!--rut -->20941199-7</td>
+                      <td><!--telefono-->9316092</td>
+                      <td><!--Direccion -->Alegria 712- Las Condes</td>
+                      <td><!--Persona que recibe -->Olga gallardo</td>
+                      <td><!--Fecha despa -->19-03-2021</td>
+                      <td><!--Descargar o cancelar --><pre>  <a><img src ="https://miracomohacerlo.com/wp-content/uploads/2018/01/descargar-whatsapp.png" width="40px"></a>        <a><img src ="https://cdn.pixabay.com/photo/2012/04/12/20/12/x-30465_1280.png" width="35px"></td></pre></a>
+                    </tr>
+                    <tr>
+                      <td><!--nombre cliente -->Roberto</td>
+                      <td><!--Apellido -->Contreras Aguilar</td>
+                      <td><!--rut -->6892378-1</td>
+                      <td><!--telefono-->976519921</td>
+                      <td><!--Direccion -->Los alamos 239-La pintana</td>
+                      <td><!--Persona que recibe -->Roberto Contreras</td>
+                      <td><!--Fecha despa -->19-03-2021</td>
+                      <td><!--Descargar o cancelar --><pre>  <a><img src ="https://miracomohacerlo.com/wp-content/uploads/2018/01/descargar-whatsapp.png" width="40px"></a>        <a><img src ="https://cdn.pixabay.com/photo/2012/04/12/20/12/x-30465_1280.png" width="35px"></td></pre></a>
+                    </tr>
+                    <tr>
+                      <td><!--nombre cliente -->Samuel</td>
+                      <td><!--Apellido -->Carvacho Riquelme</td>
+                      <td><!--rut -->98769455-7</td>
+                      <td><!--telefono-->940016391</td>
+                      <td><!--Direccion -->Los alerces856- La Cisterna</td>
+                      <td><!--Persona que recibe -->Olga gallardo</td>
+                      <td><!--Fecha despa -->19-03-2021</td>
+                      <td><!--Descargar o cancelar --><pre>  <a><img src ="https://miracomohacerlo.com/wp-content/uploads/2018/01/descargar-whatsapp.png" width="40px"></a>        <a><img src ="https://cdn.pixabay.com/photo/2012/04/12/20/12/x-30465_1280.png" width="35px"></td></pre></a>
+                    </tr>
+                    <tr>
+                      <td><!--nombre cliente -->Ernesto</td>
+                      <td><!--Apellido -->Espinoza Carvajal</td>
+                      <td><!--rut -->97677468-K</td>
+                      <td><!--telefono-->955539188</td>
+                      <td><!--Direccion -->Guanaco 3589- Conchalí</td>
+                      <td><!--Persona que recibe -->Ernesto Espinoza</td>
+                      <td><!--Fecha despa -->19-03-2021</td>
+                      <td><!--Descargar o cancelar --><pre>  <a><img src ="https://miracomohacerlo.com/wp-content/uploads/2018/01/descargar-whatsapp.png" width="40px"></a>        <a><img src ="https://cdn.pixabay.com/photo/2012/04/12/20/12/x-30465_1280.png" width="35px"></td></pre></a>
+                    </tr>
+                    <tr>
+                      <td><!--nombre cliente -->Damaris</td>
+                      <td><!--Apellido -->Otero Gonzales</td>
+                      <td><!--rut -->95528109-6</td>
+                      <td><!--telefono-->971556477</td>
+                      <td><!--Direccion -->Cauquenes 2356-Huechuraba</td>
+                      <td><!--Persona que recibe -->Damaris Otero</td>
+                      <td><!--Fecha despa -->19-03-2021</td>
+                      <td><!--Descargar o cancelar --><pre>  <a><img src ="https://miracomohacerlo.com/wp-content/uploads/2018/01/descargar-whatsapp.png" width="40px"></a>        <a><img src ="https://cdn.pixabay.com/photo/2012/04/12/20/12/x-30465_1280.png" width="35px"></td></pre></a>
+                    </tr>
+                    <tr>
+                      <td><!--nombre cliente -->Alberto</td>
+                      <td><!--Apellido --> Gonzales Gonzales</td>
+                      <td><!--rut -->98271893-K</td>
+                      <td><!--telefono-->950094568</td>
+                      <td><!--Direccion -->Av siempre viva 128-Colina</td>
+                      <td><!--Persona que recibe -->Luciano Gonzales</td>
+                      <td><!--Fecha despa -->19-03-2021</td>
+                      <td><!--Descargar o cancelar --><pre>  <a><img src ="https://miracomohacerlo.com/wp-content/uploads/2018/01/descargar-whatsapp.png" width="40px"></a>        <a><img src ="https://cdn.pixabay.com/photo/2012/04/12/20/12/x-30465_1280.png" width="35px"></td></pre></a>
+                    </tr>
+                  </tbody>
+                 
+                </table>
+
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+    
+
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+
+  <div class="footer" >
+
+  </div>
+
+
+
+
+
+
+</body>
+</html>
