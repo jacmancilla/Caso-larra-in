@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Registro producto-admin</title>
+    <title>Ver producto-admin</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
     <link href='../navbar.style.css' rel="stylesheet">
     <link href='./admin-ver-produc.css' rel="stylesheet">
@@ -14,11 +14,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
     </script>
 </head>
-<script>
-    function abrirAlerta() {
-        alert("Su producto se registró exitosamente");
-    }
-</script>
 
 <body>
     <!-- Barra Superior -->
@@ -119,96 +114,51 @@
         </ul>
     </div>
 
-    <!--Registro producto admin-->
-    <h3 class="h3-producto">Registro de Productos</h3>
-    <div class="col-sm-12 registro-producto">
+    <h3 class="h3-producto">Consultar Productos</h3>
+    <!--Consultar productos-->
+    <div class="col-sm-12 consultar-producto">
+        <label for="nombre_completo">Nombre:</label>
+        <input type="text" class="form-control-input" name="correo" id="correo" value="Cámara 24.1MP">
 
-        <div class="col-sm-6 columna-producto">
-
-            <div>
-                <label class="label-producto" for="nombre_producto">Nombre:</label>
-                <input type="text" class="form-control-input" name="nombre" id="nombre" value="Cámara 24.1MP" />
-            </div>
-
-            <div>
-                <label class="label-producto" for="descripcion_producto">Descripción:</label>
-                <input type="text" class="form-control-input" name="descripcion" id="descripcion"
-                    value="Sensor CMOS APS-C de 24.1 MP Procesador de imágen" />
-            </div>
-
-            <div>
-                <label class="label-producto" for="stock_producto">Stock:</label>
-                <input type="text" class="form-control-input" name="stock" id="stock" value="100" />
-            </div>
-
-            <div>
-                <label class="label-producto" for="stock_producto">Imagen:</label>
-                <div class="custom-file form-control-input" id="customFile" lang="es">
-
-                    <input type="file" class="custom-file-input" id="exampleInputFile" aria-describedby="fileHelp">
-
-                    <label class="custom-file-label" for="exampleInputFile">
-                        Seleccione una imagen...
-                    </label>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col-sm-6 columna-producto">
-            <div>
-                <label class="label-producto" for="codigo_producto">Código:</label>
-                <input type="text" class="form-control-input" name="codigo" id="codigo" value="342334555" />
-            </div>
-
-            <div>
-                <label class="label-producto" for="precio_producto">Precio:</label>
-                <input type="text" class="form-control-input" name="precio" id="precio" value="$150.000" />
-            </div>
-        </div>
+        <label for="nombre_completo">Código:</label>
+        <input type="text" class="form-control-input" name="correo" id="correo" value="28374433">
     </div>
 
-    <!--botones-->
-    <div class="col-sm-12 contenedor-boton-doble">
-        <a class="link-boton boton-registro-pro" data-toggle="modal" data-target="#miModal">
-            <button type="button" class="btn btn-success btn-registro">
-                Registrar
-            </button>
-        </a>
-        <a class="link-boton boton-registro-pro" href="./admin-principal.html">
-            <button type="button" class="btn btn-success btn-registro">
-                cancelar
-            </button>
-        </a>
+    <!--Muestra detalle de Producto al consultar -->
 
-    </div>
+    <div class="col-sm-12 row-producto-espacio">
+        <div class="row-vacio"></div>
+        <div class="row-producto-blanco">
+            <div class="col-sm-4">
+                <img class="imagen-producto" src="../imagenes/camara.png" />
+            </div>
 
-    <!--Mensaje de alerta-->
-    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Registrar Producto</h4>
-                </div>
+            <div class="col-sm-4 descripcion-producto">
+                <ul>Cámara fotográfica</ul>
+                <li>Color: Negro</li>
+                <li>Canon</li>
+                <li>Camara 24.1 Mp.</li>
+                <li>Formato imagen: JPG/RAW/PNG</li>
+                <LI>Sensibilidad ISO: Auto 100-6400(12800max)</LI>
+                <li>Tipo de Cámara Profesional</li>
+                <li>Alto: 12,5 cm</li>
+                <li>Ancho:19cm</li>
+            </div>
 
-                <div class="modal-body">
-                    ¿Está seguro de registrar este producto?
-                </div>
-                <div style="display: flex;margin: 40px 0 25px;">
-                    <a href="#alerta" class="btn-registro col-sm-6" data-toggle="modal" data-target="#miModal">
-                        <button type="button" class="btn btn-success col-sm-12" onclick="abrirAlerta()">
-                            Sí
-                        </button>
-                    </a>
-                    <a href="#" class="btn-registro col-sm-6" data-toggle="modal" data-target="#miModal">
-                        <button type="button" class="btn btn-success col-sm-12">
-                            No
-                        </button>
-                    </a>
-                </div>
-
+            <div class="col-sm-2 precio-producto">
+                <p class="color-precio-ennegro">Precio: $300.000</p>
             </div>
         </div>
+        <div class="row-vacio"></div>
+    </div>
+
+
+    <!--botón volver hacia el menu principal admin -->
+
+    <div class="col-sm-12 row-boton-volver-producto">
+        <button type="button" class="btn btn-success boton-producto-volver">
+            <a class="link-boton-producto-volver" href="./admin-principal.html">Volver</a>
+        </button>
     </div>
 
 

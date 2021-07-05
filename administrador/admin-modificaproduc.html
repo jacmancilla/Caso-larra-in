@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Modificar producto-admin</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href='../navbar.style.css' rel="stylesheet">
+    <link href='./admin-ver-produc.css' rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+    </script>
+</head>
+<script>
+    function abrirAlerta() {
+        alert("Su producto se modificó exitosamente");
+    }
+</script>
+
+<body>
+    <!-- Barra Superior -->
+    <div class="container">
+        <div class='col-3 header-izquierda'>
+            <a href="../index.html">
+                <img class="imagen-logo" alt="imagen-logo"
+                    src="https://freepikpsd.com/media/2019/10/mundo-tecnologico-png-1.png" />
+            </a>
+            <p class="texto-logo">Importadora Larrain</p>
+        </div>
+
+        <div class="col-6 buscar ">
+            <div class="row">
+                <div class="input-group">
+                    <input class="form-control py-2 border-left-0 border" type="search" placeholder='buscar producto'
+                        id="example-search-input" />
+                    <span class="input-group-append">
+                        <button class="btn " type="button">
+                            Buscar
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2 header-derecha">
+            <a class="links orden-menu-icon" href="#">
+                <button class="item-header-derecha">
+                    <img class="imagen-header" alt="imagen-carrito"
+                        src="https://image.flaticon.com/icons/png/512/1187/1187005.png" />
+                </button>
+            </a>
+            <div class="orden-menu-icon">
+                <img class="imagen-header" alt="login" src="https://image.flaticon.com/icons/png/512/860/860733.png"
+                    style="margin: 0 10px;" />
+
+                <a class="links" style="font-size:smaller" href="#">
+                    Administrador
+                </a>
+                <a class="links" style="font-size:smaller" href="../InicioSesion.html">
+                    Cerrar Sesión
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar Administrador -->
+    <div class='navbar-menu'>
+        <ul class="nav justify-content-center">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle links" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Productos
+                </a>
+                <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./admin-ver-producto.html">Ver Productos</a>
+                    <a class="dropdown-item" href="./admin-consultaproducto.html">Consultar Productos</a>
+                    <a class="dropdown-item" href="./admin-registroproduc.html">Registrar Productos</a>
+                    <a class="dropdown-item" href="./admin-modificaproduc.html">Modificar Productos</a>
+                    <a class="dropdown-item" href="./admin-eliminaproduc.html">Eliminar Productos</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle links" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Lista Ofertas
+                </a>
+                <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./admin-ver-ofertas.html">Ver Lista Ofertas</a>
+                    <a class="dropdown-item" href="./admin-mensajes.html">Mensajes Proveedores</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle links" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Despachos
+                </a>
+                <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./admin-registra-despacho.html">Registrar Despacho</a>
+                    <a class="dropdown-item" href="./admin-consulta-despacho.html">Consultar Despacho</a>
+                </div>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle links" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Ventas
+                </a>
+                <div class="dropdown-menu submenu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="./admin-resumen-ventas.html">Resumenes de venta</a>
+                    <a class="dropdown-item" href="./admin-envia-correo.html">Enviar email a cliente</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!--Registro producto admin-->
+    <h3 class="h3-producto">Modificar Productos</h3>
+    <div class="col-sm-12 registro-producto">
+
+        <div class="col-sm-6 columna-producto">
+
+            <div>
+                <label class="label-producto" for="nombre_producto">Nombre:</label>
+                <input type="text" class="form-control-input" name="nombre" id="nombre" value="Cámara 24.1MP" />
+            </div>
+
+            <div>
+                <label class="label-producto" for="descripcion_producto">Descripción:</label>
+                <input type="text" class="form-control-input" name="descripcion" id="descripcion"
+                    value="Sensor CMOS APS-C de 24.1 MP Procesador de imágen" />
+            </div>
+
+            <div>
+                <label class="label-producto" for="stock_producto">Stock:</label>
+                <input type="text" class="form-control-input" name="stock" id="stock" value="100" />
+            </div>
+
+            <div>
+                <label class="label-producto" for="stock_producto">Imagen:</label>
+                <div class="custom-file form-control-input" id="customFile" lang="es">
+
+                    <input type="file" class="custom-file-input" id="exampleInputFile" aria-describedby="fileHelp">
+
+                    <label class="custom-file-label" for="exampleInputFile">
+                        Seleccione una imagen...
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-sm-6 columna-producto">
+            <div>
+                <label class="label-producto" for="codigo_producto">Código:</label>
+                <input type="text" class="form-control-input" name="codigo" id="codigo" value="342334555" />
+            </div>
+
+            <div>
+                <label class="label-producto" for="precio_producto">Precio:</label>
+                <input type="text" class="form-control-input" name="precio" id="precio" value="$150.000" />
+            </div>
+        </div>
+    </div>
+
+    <!--botones-->
+    <div class="col-sm-12 contenedor-boton-doble">
+        <a href="#" data-toggle="modal" data-target="#miModal">
+            <button type="button" class="btn btn-success btn-registro">
+                Modificar
+            </button>
+        </a>
+        <a class="link-boton boton-registro-pro" href="./admin-principal.html">
+            <button type="button" class="btn btn-success btn-registro">
+                cancelar
+            </button>
+        </a>
+
+
+    </div>
+
+    <!--Mensaje de alerta-->
+    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Modificar Producto</h4>
+                </div>
+
+                <div class="modal-body">
+                    ¿Está seguro de modificar este producto?
+                </div>
+                <div style="display: flex;margin: 40px 0 25px;">
+                    <a href="#alerta" class="btn-registro col-sm-6" data-toggle="modal" data-target="#miModal">
+                        <button type="button" class="btn btn-success col-sm-12" onclick="abrirAlerta()">
+                            Sí
+                        </button>
+                    </a>
+                    <a href="#" class="btn-registro col-sm-6" data-toggle="modal" data-target="#miModal">
+                        <button type="button" class="btn btn-success col-sm-12">
+                            Cancelar
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--footer-->
+    <div class="footer">
+
+    </div>
+
+</body>
+
+</html>

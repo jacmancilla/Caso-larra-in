@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    background-color: #f6dfeb;
+    background-size: cover;
+}
+
+.container {
+    background: #8ab6d6;
+    min-width: 100%;
+    display: flex;
+    height: 80px;
+}
+
+.input-group {
+    width: 60%;
+}
+
+.row {
+    justify-content: center;
+}
+
+.header-izquierda {
+    display: flex
+}
+
+.imagen-logo {
+    height: 70px;
+    margin: 15px 15px;
+}
+
+.texto-logo {
+    color: rgb(4, 4, 4);
+    font-size: 18px;
+    margin-top: 45px;
+    font-weight: 500;
+}
+
+.imagen-header {
+    height: 42px;
+    padding: 0px 14px;
+}
+
+.orden-menu-icon {
+    padding: 0px 14px;
+}
+
+.header-derecha {
+    display: flex;
+    margin: 15px 30px;
+}
+
+.item-header-derecha {
+    margin: 3px;
+    font-size: 13px;
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100px;
+}
+
+.item-header-derecha:hover {
+    cursor: pointer;
+    outline: none;
+}
+
+.buscar {
+    padding: 30px 25px;
+}
+
+.navbar-menu {
+    background: #8ab6d6;
+    color: white;
+}
+
+.nav-link {
+    color: black;
+}
+
+a {
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.links {
+    color: black
+}
+
+.links:hover {
+    text-decoration: none;
+    background-color: white;
+    color: #8ab6d6
+}
+
+.links:focus {
+    border: none;
+    outline: none;
+}
+
+.footer {
+    background-color: #8ab6d6;
+    padding: 50px;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a h1 {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+    display: block;
+    transition: all 0.3s ease;
+    text-align: center;
+    color: #ca2521 !important;
+}

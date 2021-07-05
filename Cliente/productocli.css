@@ -1,0 +1,161 @@
+/*Tarjetas*/
+
+*{
+    box-sizing: border-box;
+}
+
+h3{
+    font-size:18px;
+    text-align:center;
+}
+p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.wrap p{
+    font-size:15px;
+}
+.wrap-producto{
+width: 1100px;
+margin: 50px auto;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+}
+
+.tarjeta-wrap-producto{
+margin: 10px;
+-webkit-perspective: 800;
+perspective: 800;
+float: left;
+width: 33%;
+padding-right: 5px;
+}
+
+.tarjeta-producto{
+width: 300px;
+height: 300px;
+background:white;
+position: relative;
+-webkit-transform-style: preserve-3d;
+transform-style: preserve-3d;
+-webkit-transition: .7s ease;
+transition: .7s ease;
+-webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+content: "";
+clear: both;
+display: table;
+}
+
+.adelante-producto, .atras-producto{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.adelante-producto{
+width: 100%;
+}
+
+.atras-producto{
+-webkit-transform: rotateY(180deg);
+transform: rotateY(180deg);
+
+padding: 15px;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+-webkit-align-items: center;
+-ms-flex-align: center;
+align-items: center;
+
+text-align: center;
+color:black;
+font-family: "open sans";
+background:lightblue;
+}
+.tarjeta-wrap-producto:hover .tarjeta-producto{
+-webkit-transform: rotateY(180deg);
+transform: rotateY(180deg);
+}
+
+.card1{
+background-image: url(http://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bfea.png);
+background-size: 300px;
+
+}
+
+.card2{
+background-image: url(https://proingsoft.com/wp-content/uploads/APT100-10000M-5V-CBLWH_3.jpg);
+background-size: contain;
+
+}
+
+.card3{
+background-image: url(https://www.lapolar.cl/dw/image/v2/BCPP_PRD/on/demandware.static/-/Sites-master-catalog/default/dw6b9eb57b/images/large/19901971.jpg?sw=1200&sh=1200&sm=fit);
+background-size: 300px;
+}
+
+.card4{
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/9b/Celular_pope.webp);
+background-size: 300px;
+}
+
+.card5{
+background-image: url(https://www.pcfactory.cl/public/foto/33865/1_500.jpg?t=1560541367);
+background-size: 300px;
+}
+
+.card6{
+background-image: url(https://newark.cl/wp-content/uploads/2020/08/Parlante-JBL-Party-Box-300.png);
+background-size: 300px;
+}
+
+.card7{
+background-image: url(https://www.pcfactory.cl/public/foto/39387/2_500.jpg?t=1604347098);
+background-size: 300px;
+}
+
+.card8{
+background-image: url(https://www.lavanguardia.com/files/content_image_mobile_filter/uploads/2017/04/20/5fa3cd4bb7d63.jpeg);
+background-size: 300px;
+}
+
+.card9{
+background-image: url(https://www.lapolar.cl/dw/image/v2/BCPP_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7ab1fca9/images/large/1CC23963094.jpg?sw=1200&sh=1200&sm=fit);
+background-size: 300px;
+}
+
+.card10{
+background-image: url(https://exitocol.vtexassets.com/arquivos/ids/888868-800-auto?width=800&height=auto&aspect=true);
+background-size: 300px;
+}
+
+.card11{
+background-image: url(http://images.lider.cl/wmtcl?source=url[file:/productos/1060749a.jpg]&sink);
+background-size: 300px;
+}
+
+.card12{
+background-image: url(https://www.paris.cl/dw/image/v2/BCHW_PRD/on/demandware.static/-/Sites-paris-marketplace/default/dwdbc8b55d/images/imagenes-productos/800/MK1V/MK1VM5F3MM-004.jpg?sw=513&sh=654&sm=fit);
+background-size: 300px;
+}

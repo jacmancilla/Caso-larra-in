@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Registro producto-admin</title>
+    <title>Ver mensajes-admin</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
     <link href='../navbar.style.css' rel="stylesheet">
     <link href='./admin-ver-produc.css' rel="stylesheet">
@@ -14,11 +14,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
     </script>
 </head>
-<script>
-    function abrirAlerta() {
-        alert("Su producto se registró exitosamente");
-    }
-</script>
 
 <body>
     <!-- Barra Superior -->
@@ -119,96 +114,27 @@
         </ul>
     </div>
 
-    <!--Registro producto admin-->
-    <h3 class="h3-producto">Registro de Productos</h3>
-    <div class="col-sm-12 registro-producto">
+    <h3 class="h3-producto">Mensaje proveedores</h3>
+    <!--mensaje proveedores
 
-        <div class="col-sm-6 columna-producto">
+    
+    AL PONER EL CONTENIDO EL FOOTER BAJA SOLO :)-->
 
-            <div>
-                <label class="label-producto" for="nombre_producto">Nombre:</label>
-                <input type="text" class="form-control-input" name="nombre" id="nombre" value="Cámara 24.1MP" />
-            </div>
 
-            <div>
-                <label class="label-producto" for="descripcion_producto">Descripción:</label>
-                <input type="text" class="form-control-input" name="descripcion" id="descripcion"
-                    value="Sensor CMOS APS-C de 24.1 MP Procesador de imágen" />
-            </div>
 
-            <div>
-                <label class="label-producto" for="stock_producto">Stock:</label>
-                <input type="text" class="form-control-input" name="stock" id="stock" value="100" />
-            </div>
 
-            <div>
-                <label class="label-producto" for="stock_producto">Imagen:</label>
-                <div class="custom-file form-control-input" id="customFile" lang="es">
 
-                    <input type="file" class="custom-file-input" id="exampleInputFile" aria-describedby="fileHelp">
 
-                    <label class="custom-file-label" for="exampleInputFile">
-                        Seleccione una imagen...
-                    </label>
-                </div>
-            </div>
 
-        </div>
 
-        <div class="col-sm-6 columna-producto">
-            <div>
-                <label class="label-producto" for="codigo_producto">Código:</label>
-                <input type="text" class="form-control-input" name="codigo" id="codigo" value="342334555" />
-            </div>
 
-            <div>
-                <label class="label-producto" for="precio_producto">Precio:</label>
-                <input type="text" class="form-control-input" name="precio" id="precio" value="$150.000" />
-            </div>
-        </div>
-    </div>
 
-    <!--botones-->
-    <div class="col-sm-12 contenedor-boton-doble">
-        <a class="link-boton boton-registro-pro" data-toggle="modal" data-target="#miModal">
-            <button type="button" class="btn btn-success btn-registro">
-                Registrar
-            </button>
-        </a>
-        <a class="link-boton boton-registro-pro" href="./admin-principal.html">
-            <button type="button" class="btn btn-success btn-registro">
-                cancelar
-            </button>
-        </a>
+    <!--botón volver hacia el menu principal admin -->
 
-    </div>
-
-    <!--Mensaje de alerta-->
-    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Registrar Producto</h4>
-                </div>
-
-                <div class="modal-body">
-                    ¿Está seguro de registrar este producto?
-                </div>
-                <div style="display: flex;margin: 40px 0 25px;">
-                    <a href="#alerta" class="btn-registro col-sm-6" data-toggle="modal" data-target="#miModal">
-                        <button type="button" class="btn btn-success col-sm-12" onclick="abrirAlerta()">
-                            Sí
-                        </button>
-                    </a>
-                    <a href="#" class="btn-registro col-sm-6" data-toggle="modal" data-target="#miModal">
-                        <button type="button" class="btn btn-success col-sm-12">
-                            No
-                        </button>
-                    </a>
-                </div>
-
-            </div>
-        </div>
+    <div class="col-sm-12 row-boton-volver-producto">
+        <button type="button" class="btn btn-success boton-producto-volver">
+            <a class="link-boton-producto-volver" href="./admin-principal.html">Volver</a>
+        </button>
     </div>
 
 
